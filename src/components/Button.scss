@@ -1,0 +1,83 @@
+@import '../styles/main.scss';
+
+.Button {
+  color: $white;
+  font-size: 1.2rem;
+  font-weight: 800;
+  background-color: $white;
+  border-radius: 20rem;
+  height: 4rem;
+  width: 16rem;
+  margin: 1.5rem 0;
+  letter-spacing: 0.18rem;
+  user-select: none;
+  @include flex-center;
+  span {
+    transform: scale(1, 0.9);
+    padding-bottom: 0.3rem;
+  }
+  &.large {
+    font-size: 1.5rem;
+    height: 5rem;
+    width: 18rem;
+  }
+  &.xlarge {
+    font-size: 2rem;
+    height: 6rem;
+    width: 22.5rem;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  &.circle {
+    background-color: transparent;
+    border: 3px solid $white;
+    height: 7.75rem;
+    width: 8rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+  &.color-red {
+    &:hover {
+      color: $white;
+      background: linear-gradient(to right, $purple, $blue);
+    }
+  }
+  &.color-yellow,
+  &.color-blue {
+    &:hover {
+      color: $white;
+      background: linear-gradient(to right, $red, $purple);
+    }
+  }
+
+  &.bg-rainbow {
+    &:hover {
+      background: linear-gradient(
+        to right,
+        $blue,
+        $purple,
+        $red,
+        $yellow,
+        $blue
+      );
+      background-size: 40rem;
+      animation: bgColor 2s infinite linear;
+    }
+  }
+
+  @keyframes bgColor {
+    25% {
+      background-position-x: -10rem;
+    }
+    50% {
+      background-position-x: -20rem;
+    }
+    75% {
+      background-position-x: -30rem;
+    }
+    100% {
+      background-position-x: -40rem;
+    }
+  }
+}

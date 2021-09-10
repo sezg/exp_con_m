@@ -1,0 +1,42 @@
+@import '../../../src/styles/main.scss';
+
+.Perks {
+  min-width: 100vw;
+  min-height: 100vh;
+  @include flex-center;
+  flex-direction: column;
+  justify-content: space-between;
+  color: $white;
+  main {
+    @include flex-center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 82%;
+    margin: 0 3rem;
+    .title {
+      align-self: flex-start;
+      margin-bottom: 3rem;
+    }
+  }
+  section.perks {
+    @include flex-center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 8rem;
+  }
+  .PerkItem {
+    max-width: 25rem;
+    margin-right: 2rem;
+    h2 {
+      font-weight: 600;
+      letter-spacing: 0.2rem;
+    }
+    h3 {
+      margin-top: 1.5rem;
+      max-width: 24rem;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

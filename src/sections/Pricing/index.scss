@@ -1,0 +1,64 @@
+@import '../../../src/styles/main.scss';
+
+.Pricing {
+  min-width: 100vw;
+  min-height: 100vh;
+  @include flex-center;
+  flex-direction: column;
+  justify-content: space-between;
+  color: $white;
+  main {
+    @include flex-center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 82%;
+    padding: 5rem 0;
+    .text {
+      align-self: flex-start;
+      margin-bottom: 7rem;
+      h2 {
+        letter-spacing: 0.1rem;
+        font-size: 2.7rem;
+      }
+    }
+  }
+  section.packages {
+    @include flex-center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 8rem;
+  }
+  .PricingItem {
+    min-width: 25rem;
+    margin-right: 2rem;
+    h1 {
+      font-size: 7rem;
+      font-weight: 800;
+      line-height: 5rem;
+      margin-bottom: 2rem;
+    }
+    h2 {
+      font-weight: 800;
+      letter-spacing: 0.2rem;
+      text-transform: uppercase;
+      font-size: 2.5rem;
+    }
+    h3 {
+      max-width: 24rem;
+    }
+    .line {
+      margin-bottom: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    li {
+      @include flex-center;
+      justify-content: flex-start;
+      .fa-music {
+        margin-right: 1rem;
+        padding-top: 0.5rem;
+      }
+    }
+  }
+}
