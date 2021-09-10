@@ -1,0 +1,19 @@
+@import '../../../src/styles/main.scss';
+
+.Get {
+  min-width: 100vw;
+  min-height: 80vh;
+  @include flex-center;
+  flex-direction: column;
+  justify-content: space-between;
+  color: $white;
+  main {
+    @include flex-center;
+    justify-content: space-between;
+    width: 82%;
+    margin: 0 3rem 8rem 3rem;
+    h1 {
+      color: $red;
+    }
+  }
+}
