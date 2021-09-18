@@ -20,7 +20,7 @@ const Footer = () => {
       <div className="copyright">
         <h2>EXP|CON</h2>
         <div>
-          2019 &copy; All Rights Reserved | Speer Technologies Incorporated
+          2019 &copy; All Rights Reserved | ABC Technologies Incorporated
         </div>
       </div>
     </div>
